@@ -1,5 +1,4 @@
 function estPalindrome(){                                               // ici pas besoin de renseigner de paramètres donc je peux laisser les () vides ! car ma valeur qui serait mot est à déterminer par le prompt
-    let reponseValide = false
     let mot
                                                       
     while (true) {
@@ -9,7 +8,6 @@ function estPalindrome(){                                               // ici p
 
     if (mot === motInverse ){
         alert("Votre mot est un palindrome !")
-        reponseValide = true
         // return true
 
     } else {                                                            // on enlève le return false pour éviter de quitter la boucle tant que l'on a pas un palindrome

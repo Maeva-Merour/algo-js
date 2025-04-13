@@ -112,7 +112,7 @@ if (start === "1") {
     break                                                   // permet d'interrompre ma boucle si l'utilisateur choisit 5.
 
 } else {
-    alert("Sélectionne une valeur comprise entre 1 et 5")    
+    alert("Sélectionnez une valeur comprise entre 1 et 5")    
 }
 }
 

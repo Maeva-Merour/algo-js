@@ -29,8 +29,8 @@ function check(numberV) {
 
 let choice = null
 
-do {                                                                            //do...while. Cette boucle permet d'exécuter un bloc de code au moins une fois avant de vérifier la condition qui détermine si la boucle doit continuer ou non.
-    choice = Number(prompt(
+while (true) {                                                                   //do...while. Cette boucle permet d'exécuter un bloc de code au moins une fois avant de vérifier la condition qui détermine si la boucle doit continuer ou non.
+    choice = Number(prompt(                                                     // Nan signifie "Not a Number ""
         "Quelle opération voulez-vous faire ?\n" +                              // \n permet un retour à la ligne
         "1 - Addition\n" +
         "2 - Soustraction\n" +
@@ -39,12 +39,10 @@ do {                                                                            
         "5 - Quitter\n"
     ))
 
-    if (choice > 5 ) {    
+    if (isNaN(choice < 1 || choice >= 5 ))
         alert("Sélectionne une valeur comprise entre 1 et 5")
-        }
-    } 
     
-    while (!(choice >= 1 && choice <= 5));                                      // ! signifie ici "tant que la saisie choice n’est pas entre 1 et 5, la boucle reprend"
+    // while (!(choice >= 1 && choice <= 5));                                      // ! signifie ici "tant que la saisie choice n’est pas entre 1 et 5, la boucle reprend"
 
     let number1 = null
     let number2 = null
@@ -121,10 +119,11 @@ do {                                                                            
         case 5:
             alert("A bientôt !");
             break;
-
-        default:
-            alert("Sélectionne une valeur comprise entre 1 et 5")
     }
 
+    if (choice === 5){
+        break
+    }
+}
 
 
